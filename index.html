@@ -15,44 +15,28 @@
     <header class="sticky top-0 bg-gray-950 py-5 z-10">
         <nav class="w-9/12 flex flex-row mx-auto">
             <!-- Logo -->
-            <div class="basis-1/4 uppercase text-lg">
+            <div class="basis-1/2 uppercase text-lg">
                 <a href="#hero">
                     <span class="font-extrabold text-white">Rafi</span>
-                    <span class="font-extralight text-blue-400">Andriawan</span>
+                    <span class="font-extralight text-blue-400 hidden md:inline">Andriawan</span>
                 </a>
             </div>
 
             <!-- Link Navigasi -->
-            <div class="basis-1/2 flex items-center justify-evenly">
-                <a href="#hero"><span>About</span></a>
-                <a href="#services"><span>Services</span></a>
-                <a href="#portofolios"><span>Portofolios</span></a>
-                <a href="#contact"><span>Contact</span></a>
+            <div class="basis-1/2 flex items-center justify-end">
+                <a class="px-1 md:px-3" href="#hero"><span>About</span></a>
+                <a class="px-1 md:px-3" href="#services"><span>Services</span></a>
+                <a class="px-1 md:px-3" href="#portofolios"><span>Portofolios</span></a>
+                <a class="px-1 md:px-3" href="#contact"><span>Contact</span></a>
             </div>
-
-            <!-- Dark Mode -->
-            <div class="basis-1/4 flex items-center justify-center">
-                <span class="hidden dark:inline end:0"><svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
-                            class="fill-sky-400/20"></path>
-                        <path
-                            d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                            class="fill-sky-500"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-                            class="fill-sky-500"></path>
-                    </svg></span>
-            </div>
-
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="relative -top-16">
+    <main class="relative md:-top-16">
         <!-- Hero -->
         <section id="hero" class="bg-gray-900">
-            <div class="w-9/12 h-screen flex items-center mx-auto">
+            <div class="w-9/12 h-screen flex flex-col md:flex-row items-center mx-auto pt-14">
                 <!-- Description -->
                 <div class="basis-1/2">
                     <!-- Title -->
@@ -111,7 +95,7 @@
                 </div>
 
                 <!-- Cards -->
-                <div class="grid grid-cols-3 gap-10 py-10">
+                <div class="grid grid-col-1 md:grid-cols-3 gap-10 py-10">
                     <!-- Specialized Card 1 -->
                     <div class="rounded-lg bg-white shadow-lg">
                         <div class="flex flex-col items-center py-10 px-10">
@@ -173,10 +157,9 @@
                 </div>
 
                 <!-- Cards -->
-                <div class="grid grid-cols-4 gap-10 mt-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
                     <div class="rounded-lg shadow-lg overflow-hidden">
-                        <img class="object-cover h-48 opacity-50 hover:opacity-100" src="public/img/porto1 (1).png"
-                            alt="">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (1).png" alt="">
                         <div class="bg-white py-3 px-5">
                             <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
                             <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
@@ -184,8 +167,7 @@
                     </div>
 
                     <div class="rounded-lg shadow-lg overflow-hidden">
-                        <img class="object-cover h-48 opacity-50 hover:opacity-100" src="public/img/porto1 (2).png"
-                            alt="">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (2).png" alt="">
                         <div class="bg-white py-3 px-5">
                             <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
                             <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
@@ -193,8 +175,7 @@
                     </div>
 
                     <div class="rounded-lg shadow-lg overflow-hidden">
-                        <img class="object-cover h-48 opacity-50 hover:opacity-100" src="public/img/porto1 (3).png"
-                            alt="">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (3).png" alt="">
                         <div class="bg-white py-3 px-5">
                             <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
                             <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
@@ -202,8 +183,39 @@
                     </div>
 
                     <div class="rounded-lg shadow-lg overflow-hidden">
-                        <img class="object-cover h-48 opacity-50 hover:opacity-100" src="public/img/porto1 (4).png"
-                            alt="">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (4).png" alt="">
+                        <div class="bg-white py-3 px-5">
+                            <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
+                            <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (1).png" alt="">
+                        <div class="bg-white py-3 px-5">
+                            <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
+                            <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (2).png" alt="">
+                        <div class="bg-white py-3 px-5">
+                            <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
+                            <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (3).png" alt="">
+                        <div class="bg-white py-3 px-5">
+                            <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
+                            <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <img class="object-cover opacity-50 hover:opacity-100" src="public/img/porto1 (4).png" alt="">
                         <div class="bg-white py-3 px-5">
                             <h4 class="text-sm mt-2 font-medium text-gray-800">Renaissace Cover</h4>
                             <h5 class="text-sm mt-1 font-light">Anime Style Fanart</h5>
@@ -215,7 +227,7 @@
 
         <!-- Contact -->
         <section id="contact" class="bg-white pt-40">
-            <div class="w-7/12 mx-auto flex flex-row items-center">
+            <div class="w-9/12 mx-auto flex flex-col md:flex-row items-center">
                 <!-- Form -->
                 <div class="basis-1/2">
                     <!-- Title -->
@@ -259,7 +271,7 @@
                 </div>
 
                 <!-- Detail -->
-                <div class="basis-1/2 ml-10">
+                <div class="basis-1/2 md:ml-10">
                     <div class="flex flex-row  gap-5 p-5">
                         <!-- Icon -->
                         <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl">
@@ -302,7 +314,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white text-center py-10 -mt-20">
+    <footer class="bg-white text-center py-5 md:py-10 md:-mt-20">
         <p>Yasir &copy; 2023. All Right Reserved</p>
     </footer>
 </body>
